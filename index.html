@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expatriés Services - Madagascar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/webpixel@1.0.0/dist/webpixel.min.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Expatriés Services</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fal fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À Propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ebook">Ebook Gratuit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Header -->
+    <!-- Header -->
+<header class="jumbotron jumbotron-fluid text-center text-white" id="header">
+    <div class="container">
+        <h1 class="display-4">Bienvenue chez Expatriés Services</h1>
+        <p class="lead">Votre partenaire pour obtenir un visa long séjour ou une carte résident à Madagascar</p>
+    </div>
+</header>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center">À Propos de Nous</h2>
+            <p class="text-center">Nous sommes une entreprise spécialisée dans les démarches administratives pour les expatriés à Madagascar. Nous vous accompagnons pour obtenir votre visa long séjour ou votre carte de résident en toute sérénité.</p>
+        </div>
+    </section>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="container">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Titre de la carte</h2>
+                        </div>
+                        <div class="card-body">
+                            <p>Ceci est une carte créée avec WebPixel.</p>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-primary">En savoir plus</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer class="text-white bg-dark">
+    <div class="container py-4">
+        <div class="row">
+            <!-- About Us Section -->
+            <div class="col-md-3">
+                <h5>À Propos de Nous</h5>
+                <p>Expatriés Services vous accompagne dans toutes vos démarches administratives à Madagascar.</p>
+            </div>
+            <!-- Quick Links Section -->
+            <div class="col-md-3">
+                <h5>Liens Rapides</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#about" class="text-white">À Propos</a></li>
+                    <li><a href="#ebook" class="text-white">Ebook Gratuit</a></li>
+                    <li><a href="#contact" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Contact Section -->
+            <div class="col-md-3">
+                <h5>Contactez-Nous</h5>
+                <p>Email: <a href="mailto:contact@expatrieservices.com" class="text-white">contact@expatrieservices.com</a></p>
+                <p>Téléphone: <a href="tel:+26134123456" class="text-white">+261 34 12 34 56</a></p>
+            </div>
+            <!-- Social Media Section -->
+            <div class="col-md-3">
+                <h5>Suivez-Nous</h5>
+                <a href="#" class="text-white mr-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mr-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mr-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="bg-secondary text-center py-3">
+        <p class="mb-0">&copy; 2024 Expatriés Services. Tous droits réservés.</p>
+    </div>
+</footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Ajout de jQuery pour une animation de soumission -->
+<script>
+    $(document).ready(function() {
+        $('#subscribe-form').on('submit', function(event) {
+            event.preventDefault(); // Empêche l'envoi du formulaire pour cette démo
+    
+            // Animation de soumission
+            $(this).find('button').text('Merci !')
+                .css({
+                    'background-color': '#28a745',
+                    'border-color': '#28a745'
+                })
+                .animate({
+                    width: '200px'
+                }, 500, function() {
+                    $(this).text('Télécharger');
+                    $(this).css({
+                        'background-color': '#007bff',
+                        'border-color': '#007bff'
+                    });
+                });
+    
+            // Réinitialisation du formulaire
+            $(this).trigger('reset');
+        });
+    });
+
+    $(document).ready(function() {
+        $('#download-form').on('submit', function(event) {
+            event.preventDefault(); // Empêche l'envoi du formulaire pour cette démo
+            
+            // Récupérer l'email entré par l'utilisateur
+            var email = $('#email').val().trim();
+            
+            // Envoyer les données du formulaire à send_email.php
+            $.ajax({
+                type: 'POST',
+                url: 'send_email.php',
+                data: $(this).serialize(),
+                dataType: 'json',
+                success: function(response) {
+                    if (response.success) {
+                        // Afficher une notification de succès
+                        showAlert('success', 'Merci ! Votre ebook est en route vers votre boîte de réception.');
+                    } else {
+                        // Afficher une notification d'erreur si l'envoi a échoué
+                        showAlert('danger', 'Erreur lors de l\'envoi de l\'email.');
+                    }
+                },
+                error: function() {
+                    // Afficher une notification d'erreur en cas d'erreur AJAX
+                    showAlert('danger', 'Erreur lors de la requête AJAX.');
+                }
+            });
+        });
+    
+        // Fonction pour afficher une notification
+        function showAlert(type, message) {
+            var alertHtml = '<div class="alert alert-' + type + ' alert-dismissible fade show" role="alert">';
+            alertHtml += message;
+            alertHtml += '<button type="button" class="close" data-dismiss="alert" aria-label="Close">';
+            alertHtml += '<span aria-hidden="true">&times;</span></button></div>';
+            
+            // Afficher la notification dans un élément avec l'id 'alerts-container'
+            $('#alerts-container').html(alertHtml);
+        }
+    });
+    </script>
+    
+</body>
+</html>
